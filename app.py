@@ -31,8 +31,11 @@ def upload_file():
 	if file and allowed_file(file.filename):
 		filename = secure_filename(file.filename)
 		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-		return render_template('imagePage.html', filename = "/images/wallpapers/" + filename[1:] )
+		
 		#return redirect(url_for('uploaded_file', filename = filename))
+
+		subprocess.call(["./imagemaker/imagetest.py", "images/" + filename])
+		return render_template('imagePage.html', filename = "/images/wallpapers/" + filename[1:] )
 	else:
 		return render_template('index.html')
 
