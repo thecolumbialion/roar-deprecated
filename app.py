@@ -52,27 +52,7 @@ def uploaded_file(filename):
 	#print(newest)
 	#newest = max(glob.iglob('*.[pj][np]g'), key=os.path.getctime)
 	#newest = max(glob.iglob('*.[Mm][Pp]3'), key=os.path.getctime)
-	return render_template('imagePage.html', filename = "/images/wallpapers/" + filename[1:] );
-@app.route('/download/<filename>', methods=['POST'])
-
-
-	"""print("testing here")
-	if request.method == 'POST':
-		f.request.files['input']
-		f.save("../images/background.png")
-    	return render_template('index.html')"""
-
-
-
-"""@app.route('/makeimage')
-def imageMaker():
-	subprocess.call("../imagemaker/imagetest.py")
-	time.sleep(5)
-
-	#maybe add a temporary site that just says loading while waiting
-	#render_template("")
-	return render_template('../newImage/index.html')"""
-
+	return render_template('imagePage.html', filename = "/images/wallpapers/" + filename[1:] )
 
 
 @app.errorhandler(404)
