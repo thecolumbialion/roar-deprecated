@@ -34,15 +34,17 @@ body {
   font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
   color: #7F8C9A;
   background: #FCFDFD;
+  background-image: url(static/city.jpg);
+  background-repeat: no-repeat;
 }
 h1, h2 {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   font-weight: normal;
   text-align: center;
   color:#aaa;
 }
 h2 {
-  margin: 5px 0 2em;
+  margin: 8px 0 2em;
   color: #9bddff;
 }
 form {
@@ -55,7 +57,7 @@ h2 + P {
 }
 .txtcenter {
   margin-top: 4em;
-  font-size: .9em;
+  font-size: 1em;
   text-align: center;
   color: #C4D8E2;
 
