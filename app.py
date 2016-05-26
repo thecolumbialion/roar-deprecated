@@ -10,7 +10,7 @@ import glob
 app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = 'images/'
-app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg'])
+app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'JPG', 'PNG'])
 
 #thanks for the help http://code.runnable.com/UiPcaBXaxGNYAAAL/how-to-upload-a-file-to-the-server-in-flask-for-python
 def allowed_file(filename):
