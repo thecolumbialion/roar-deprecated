@@ -24,7 +24,10 @@
   background: #34495E;
   color: #9bddff;
 }
-
+ body {
+    background: url("../city.jpg") no-repeat; 
+    background-size: 100%; 
+} 
 
 
 
